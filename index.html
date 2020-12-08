@@ -11,10 +11,81 @@
 
     <!-- styles css -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Store</title>
+    <title>Furniture Store</title>
   </head>
   <body>
-    <h2>home page</h2>
-    <script type="module" src="app.js"></script>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- links -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link"> Products </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link"> About </a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <img src="./images/logo-white.svg" alt="logo" class="nav-logo" />
+        <!-- cart icon -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">Handcrafted with care</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          praesentium.
+        </h3>
+        <a href="products.html" class="hero-btn">Shop now</a>
+      </div>
+    </section>
+    <!-- sidebar -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <!-- close -->
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-info fa-fw"></i>
+              About
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
