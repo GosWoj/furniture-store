@@ -434,7 +434,7 @@ Cart
   width: 100%;
   height: 100%;
   max-width: 400px;
-  background: var(--clr-grey-10);
+  background: white;
   padding: 3rem 1rem 0 1rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -698,7 +698,7 @@ Products Page
     gap: 1rem;
   }
   .products-container .product-img {
-    height: 10rem;
+    height: 11.4rem;
   }
   .products-container .product-name {
     font-size: 0.85rem;
