@@ -1,5 +1,5 @@
-const allProductsUrl = "https://apimocha.com/furny-products/furniture";
-const singleProductUrl = "https://apimocha.com/furny-products/item/";
+const allProductsUrl = "https://apimocha.com/furniture-react/products";
+const singleProductUrl = "https://apimocha.com/furniture-react/product/";
 
 const formatPrice = (price) => {
   let formattedPrice = new Intl.NumberFormat("de-DE", {

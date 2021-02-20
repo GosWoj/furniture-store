@@ -4,12 +4,9 @@ let store = getStorageItem("store");
 
 const setupStore = (products) => {
   store = products.map((product) => {
-    const {
-      id,
-      fields: { featured, name, price, designer, colors, image: img },
-    } = product;
-    //Grabbing large img from an array
-    const image = img[0].thumbnails.large.url;
+    const { id, featured, name, price, designer, colors, image: img } = product;
+
+    const image = img[0].url;
     return { id, featured, name, price, designer, colors, image };
   });
   //Setting store, so products can be easily grabbed

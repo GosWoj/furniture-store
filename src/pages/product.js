@@ -33,10 +33,17 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (response.status >= 200 && response.status <= 299) {
       const product = await response.json();
       //Grab data
-      const { id, fields } = product;
+      const {
+        id,
+        name,
+        price,
+        colors,
+        description,
+        designer,
+        images,
+      } = product;
       productID = id;
-      const { name, designer, price, colors, description } = fields;
-      const image = fields.image[0].thumbnails.large.url;
+      const image = images[0].url;
       titleDOM.textContent = name;
       designerDOM.textContent = `by ${designer}`;
       priceDOM.textContent = formatPrice(price);
