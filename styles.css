@@ -687,7 +687,6 @@ Products Page
     grid-template-columns: 200px 1fr;
   }
   .designers {
-    position: sticky;
     top: 1rem;
   }
 }
