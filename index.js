@@ -13,9 +13,11 @@ const init = async () => {
 
   if (products) {
     setupStore(products);
-    const featured = store.filter((product) => {
-      return product.featured === true;
-    });
+    const featured = store
+      .filter((product) => {
+        return product.featured === true;
+      })
+      .slice(0, 3);
     display(featured, getElement(".featured-center"));
   }
 };
